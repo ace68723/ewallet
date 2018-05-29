@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import Home from './App/Components/Home'
+import CheckoutStatus from './App/Components/CheckoutStatus'
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -23,7 +24,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <Home />
+      <CheckoutStatus checkoutSuccessful={true} />
     );
   }
 }
