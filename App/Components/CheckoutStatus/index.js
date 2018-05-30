@@ -60,7 +60,7 @@ export default class CheckoutStatus extends Component {
             <View style={{marginTop:Setting.getY(100),width:Setting.getX(1000),height:Setting.getY(200)}}>
               <Text style={{fontSize:16, }}
                     allowFontScaling={false}>
-                订单支付成功！您可以在两个工作日内收到您的箱子~
+                订单支付成功！你可以在【我的卡包】中查看所购买的礼品卡。
               </Text>
             </View>
             <TouchableOpacity onPress={this._goBack}
@@ -68,7 +68,7 @@ export default class CheckoutStatus extends Component {
               <View style={{alignItems:'center',justifyContent:'center',backgroundColor:'#ff768b',width:Setting.getX(600),height:Setting.getY(150)}}>
                 <Text style={{fontSize:16,color:'white'}}
                       allowFontScaling={false}>
-                  查看历史订单
+                  我的卡包
                 </Text>
               </View>
 
@@ -107,7 +107,7 @@ export default class CheckoutStatus extends Component {
               <View style={{alignItems:'center',justifyContent:'center',backgroundColor:'#ff768b',width:Setting.getX(600),height:Setting.getY(150)}}>
                 <Text style={{fontSize:16,color:'white'}}
                       allowFontScaling={false}>
-                  返回购物箱
+                  返回商城
                 </Text>
               </View>
 
