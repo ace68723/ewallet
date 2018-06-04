@@ -14,7 +14,7 @@ import {
 import SboxHeader from '../SboxHeader';
 const { height, width } = Dimensions.get('window');
 
-export default class SboxChooseCardType extends Component {
+export default class ChooseCardType extends Component {
 
   constructor(){
     super()
@@ -35,7 +35,7 @@ export default class SboxChooseCardType extends Component {
 
   _goToCredit() {
     this.props.navigator.push({
-        screen: "SboxAddCard",
+        screen: "AddCard",
         navigatorStyle: {navBarHidden:true},
         passProps:{
           title:"添加信用卡"
@@ -45,7 +45,7 @@ export default class SboxChooseCardType extends Component {
 
   _goToDebit() {
     this.props.navigator.push({
-        screen: "SboxAddCard",
+        screen: "AddCard",
         navigatorStyle: {navBarHidden:true},
         passProps:{
           title:"添加 Debit Card"
@@ -127,7 +127,28 @@ export default class SboxChooseCardType extends Component {
                               marginLeft :20,
                               color:"#808080",}}
                       allowFontScaling={false}>
-                              Debit Visa Mastercard
+                              Debit Card
+                </Text>
+                <Image style={{height: 20,
+                              width: 20,
+                              marginRight:20,}}
+                       source={require('./Img/right.png')}/>
+            </TouchableOpacity>
+            <View style={styles.separator}/>
+            <TouchableOpacity onPress={this._goToDebit}
+                activeOpacity={0.4}
+                style={{flexDirection: 'row',
+                        paddingTop: 20,
+                        paddingBottom: 20,
+                        alignItems: 'center',
+                        backgroundColor: 'white'}}>
+                <Text style={{flex: 1,
+                              fontSize: 18,
+                              textAlign: 'left',
+                              marginLeft :20,
+                              color:"#808080",}}
+                      allowFontScaling={false}>
+                              Wechat Pay
                 </Text>
                 <Image style={{height: 20,
                               width: 20,

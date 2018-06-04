@@ -13,7 +13,11 @@ import {
 } from 'react-native';
 import Home from './App/Components/Home'
 import CheckoutStatus from './App/Components/CheckoutStatus'
-import SboxChooseCardType from './App/Components/AddCard/SboxChooseCardType'
+
+import Checkout from './App/Components/Checkout/index'
+import AddAddress from './App/Components/AddAddress/index'
+import AddAddressInfo from './App/Components/AddAddressInfo/AddAddressInfo'
+import ChooseCardType from './App/Components/AddCard/ChooseCardType'
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -25,7 +29,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <SboxChooseCardType checkoutSuccessful={true} />
+      <AddAddressInfo />
     );
   }
 }
