@@ -16,6 +16,8 @@ import CheckoutStatus from './App/Components/CheckoutStatus'
 
 import Checkout from './App/Components/Checkout/index'
 import AddAddress from './App/Components/AddAddress/index'
+
+import About from './App/Components/About/AboutContact'
 import AddAddressInfo from './App/Components/AddAddressInfo/AddAddressInfo'
 import ChooseCardType from './App/Components/AddCard/ChooseCardType'
 const instructions = Platform.select({
@@ -29,7 +31,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <AddAddressInfo />
+      <About />
     );
   }
 }
